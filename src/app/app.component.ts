@@ -13,14 +13,17 @@ export class AppComponent {
   @ViewChild('sidenav') sidenav: MatSidenav;
 
   ngOnInit() {
-    console.log(window.innerWidth)
-    if (window.innerWidth < 768) {
-      this.sidenav.fixedTopGap = 55;
-      this.opened = false;
-    } else {
-      this.sidenav.fixedTopGap = 55;
-      this.opened = true;
-    }
+    console.log(window.innerWidth);
+    setTimeout(() => {
+      if (window.innerWidth < 768) {
+        this.sidenav.fixedTopGap = 55;
+        this.opened = false;
+      } else {
+        console.log(this.sidenav);
+        this.sidenav.fixedTopGap = 55;
+        this.opened = true;
+      }
+    }, 500);
   }
 
   @HostListener('window:resize', ['$event'])
