@@ -33,3 +33,20 @@ body .push-right{margin-right:10px;}
 @media (max-width:767px){.nav-tool-items{margin-right:0;}
  .hamburger{visibility:visible !important;}
 }
+
+
+.circle {
+    float: left;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+    background: rgba(59, 59, 59, 0.979);
+  }
+
+  .lightdark {
+      color: rgb(39, 34, 34);
+  }
